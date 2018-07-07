@@ -9,7 +9,7 @@ public class PlayerMoveSystem : ComponentSystem
 {
     public struct PlayerGroup
     {
-        public int Length;
+        public  readonly int Length;
         public ComponentDataArray<Position> positionOfPlayer;
         public ComponentDataArray<PlayerInput> playerInput;
     }

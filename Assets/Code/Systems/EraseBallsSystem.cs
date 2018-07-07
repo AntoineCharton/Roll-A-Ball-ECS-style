@@ -21,8 +21,7 @@ public class EraseBallsSystem : ComponentSystem
     {
         public ComponentDataArray<Position> playerPos;
         public ComponentDataArray<Cube> cube;
-        public int Length;
-        
+        public readonly int Length;
     }
 
     public struct BallsGroup
@@ -31,7 +30,7 @@ public class EraseBallsSystem : ComponentSystem
         public ComponentDataArray<Position> ballPos;
         public EntityArray entityArray;
         public SubtractiveComponent<Die> die;
-        public int Length;
+        public readonly int Length;
     }
 
     [Inject] PlayerGroup playerGroup;

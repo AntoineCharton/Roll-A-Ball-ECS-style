@@ -7,10 +7,9 @@ using Unity.Mathematics;
 
 
 public class SetBallsSystem : ComponentSystem {
-
     public struct BallsGroup
     {
-        public int Length ;
+        public readonly int Length ;
         public ComponentDataArray<Ball> balls;
         public ComponentDataArray<Position> positions;
         
